@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bruno Chen | AI 規劃 & 全球行銷專家</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;700&display=swap');
+
+        body {
+            font-family: 'Noto Sans TC', sans-serif;
+            background-color: #050b18;
+            color: #e2e8f0;
+            overflow-x: hidden;
+        }
+
+        .bg-glow {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle at 50% 50%, #1e293b 0%, #050b18 100%);
+            z-index: -2;
+        }
+
+        .orb {
+            position: absolute;
+            width: 500px;
+            height: 500px;
+            background: linear-gradient(45deg, #3b82f6, #8b5cf6);
+            filter: blur(80px);
+            border-radius: 50%;
+            opacity: 0.15;
+            animation: float 20s infinite alternate;
+            z-index: -1;
+        }
+
+        @keyframes float {
+            0% { transform: translate(-10%, -10%); }
+            100% { transform: translate(20%, 20%); }
+        }
+
+        .glass {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 24px;
+            transition: all 0.3s ease;
+        }
+
+        .glass:hover {
+            background: rgba(255, 255, 255, 0.06);
+            border-color: rgba(59, 130, 246, 0.5);
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px -10px rgba(59, 130, 246, 0.3);
+        }
+
+        .text-glow {
+            text-shadow: 0 0 10px rgba(59, 130, 246, 0.5);
+        }
+
+        .service-icon {
+            background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .reveal {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.6s ease-out;
+        }
+
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* 圖片光暈邊框 */
+        .img-container {
+            position: relative;
+            padding: 4px;
+            background: linear-gradient(45deg, #3b82f6, transparent, #8b5cf6);
+            border-radius: 50%;
+            box-shadow: 0 0 20px rgba(59, 130, 246, 0.4);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="bg-glow"></div>
+    <div class="orb" style="top: 10%; left: 10%;"></div>
+    <div class="orb" style="bottom: 10%; right: 10%; animation-delay: -5s; background: linear-gradient(45deg, #06b6d4, #3b82f6);"></div>
+
+    <main class="max-w-4xl mx-auto px-6 py-12 md:py-20">
+        
+        <!-- Header Section: Personal Info -->
+        <section class="text-center mb-16 reveal active">
+            <div class="relative inline-block mb-6">
+                <!-- 圖片路徑已更新至 img/ 目錄 -->
+                <div class="w-32 h-32 md:w-44 md:h-44 img-container mx-auto">
+                    <div class="w-full h-full rounded-full bg-slate-800 flex items-center justify-center overflow-hidden">
+                        <img src="547841085_4272727502948772_3337208550692609584_n.jpg" alt="Bruno Chen" class="w-full h-full object-cover">
+                    </div>
+                </div>
+                <div class="absolute -bottom-1 -right-1 bg-blue-600 text-white text-xs px-3 py-1 rounded-full font-bold tracking-wider shadow-lg">EXPERT</div>
+            </div>
+            
+            <h1 class="text-4xl md:text-5xl font-bold mb-2 tracking-tight">
+                <span class="text-glow">Bruno Chen</span>
+            </h1>
+            <p class="text-blue-400 font-medium mb-8 text-lg">AI 戰略顧問 | 跨境行銷專家</p>
+
+            <div class="flex flex-wrap justify-center gap-4">
+                <a href="tel:0963130613" class="glass px-6 py-3 flex items-center gap-2 hover:text-blue-400 transition-colors">
+                    <i data-lucide="phone" class="w-5 h-5"></i>
+                    <span>0963-130-613</span>
+                </a>
+                <a href="mailto:bruno.khc@gmail.com" class="glass px-6 py-3 flex items-center gap-2 hover:text-blue-400 transition-colors">
+                    <i data-lucide="mail" class="w-5 h-5"></i>
+                    <span>bruno.khc@gmail.com</span>
+                </a>
+                <a href="https://ezberich.com" target="_blank" class="glass px-6 py-3 flex items-center gap-2 hover:text-blue-400 transition-colors">
+                    <i data-lucide="globe" class="w-5 h-5"></i>
+                    <span>ezberich.com</span>
+                </a>
+            </div>
+        </section>
+
+        <!-- About / Vision Section with Photo 2 -->
+        <section class="mb-20 reveal">
+            <div class="glass p-1 md:p-8 overflow-hidden">
+                <div class="flex flex-col md:flex-row items-center gap-8">
+                    <div class="w-full md:w-2/5 h-64 md:h-80 rounded-2xl overflow-hidden shadow-2xl">
+                        <!-- 圖片路徑已更新至 img/ 目錄 -->
+                        <img src="548267867_4272726152948907_8143666233843647009_n.jpg" alt="Professional Bruno" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700">
+                    </div>
+                    <div class="w-full md:w-3/5 p-6 md:p-0">
+                        <h2 class="text-2xl font-bold mb-4 text-blue-400">專注 AI 與 跨境行銷佈局</h2>
+                        <p class="text-slate-400 leading-relaxed mb-4">
+                            憑藉深厚的技術背景與市場洞察，致力於幫助企業在 AI 浪潮中找到獲利路徑。我們不只談技術，更談如何將技術落地為實際的市場份額與品牌影響力。
+                        </p>
+                        <div class="flex gap-4">
+                            <div class="flex flex-col">
+                                <span class="text-2xl font-bold text-white">10+</span>
+                                <span class="text-xs text-slate-500">服務年資</span>
+                            </div>
+                            <div class="h-10 w-[1px] bg-slate-700"></div>
+                            <div class="flex flex-col">
+                                <span class="text-2xl font-bold text-white">50+</span>
+                                <span class="text-xs text-slate-500">企業合作</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section class="mb-16">
+            <div class="flex items-center gap-4 mb-8">
+                <h2 class="text-2xl font-bold">專業服務項目</h2>
+                <div class="h-[1px] flex-grow bg-gradient-to-r from-blue-500/50 to-transparent"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="glass p-8 reveal">
+                    <div class="mb-4">
+                        <i data-lucide="cpu" class="w-10 h-10 service-icon"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-blue-100">企業 AI 轉型規劃</h3>
+                    <p class="text-slate-400 leading-relaxed">提供客製化 AI 流程自動化建議，幫助企業導入生成式 AI 提升生產力與數據決策效率。</p>
+                </div>
+
+                <div class="glass p-8 reveal">
+                    <div class="mb-4">
+                        <i data-lucide="trending-up" class="w-10 h-10 service-icon"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-blue-100">數位網路行銷</h3>
+                    <p class="text-slate-400 leading-relaxed">精準數據驅動的行銷策略，涵蓋 SEO、社群媒體經營與數位廣告投放，最大化品牌曝光。</p>
+                </div>
+
+                <div class="glass p-8 reveal">
+                    <div class="mb-4">
+                        <i data-lucide="map-pin" class="w-10 h-10 service-icon"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-blue-100">大陸地區行銷佈局</h3>
+                    <p class="text-slate-400 leading-relaxed">深耕中國市場環境，提供小紅書、抖音、微信公眾號等在地化平台規劃與合規諮詢。</p>
+                </div>
+
+                <div class="glass p-8 reveal">
+                    <div class="mb-4">
+                        <i data-lucide="clapperboard" class="w-10 h-10 service-icon"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-blue-100">短影音與劇本策劃</h3>
+                    <p class="text-slate-400 leading-relaxed">捕捉當下流量紅利，從創意劇本、拍攝導向到節奏剪輯，打造高轉化率的短影音內容。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="text-center reveal">
+            <div class="glass p-10 relative overflow-hidden">
+                <div class="absolute top-0 right-0 p-4 opacity-10">
+                    <i data-lucide="rocket" class="w-32 h-32"></i>
+                </div>
+                <h2 class="text-2xl font-bold mb-4">準備好啟動您的項目了嗎？</h2>
+                <p class="text-slate-400 mb-8">讓我們攜手運用 AI 與精準行銷，為您的企業創造下一個增長點。</p>
+                <div class="flex flex-col sm:flex-row justify-center gap-4">
+                    <a href="tel:0963130613" class="bg-blue-600 hover:bg-blue-500 text-white font-bold py-4 px-10 rounded-xl transition-all shadow-lg shadow-blue-500/20 flex items-center justify-center gap-2">
+                        <i data-lucide="message-square" class="w-5 h-5"></i>
+                        立即諮詢
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="mt-20 text-center text-slate-500 text-sm">
+            <p>© <span id="year"></span> Bruno Chen. All Rights Reserved.</p>
+        </footer>
+    </main>
+
+    <script>
+        lucide.createIcons();
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        const observerOptions = { threshold: 0.1 };
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+        
+        document.addEventListener('mousemove', (e) => {
+            const x = e.clientX / window.innerWidth;
+            const y = e.clientY / window.innerHeight;
+            document.querySelectorAll('.orb').forEach((orb, index) => {
+                const speed = (index + 1) * 20;
+                orb.style.transform = `translate(${x * speed}px, ${y * speed}px)`;
+            });
+        });
+    </script>
+</body>
+</html>
